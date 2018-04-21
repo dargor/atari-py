@@ -68,6 +68,10 @@ typedef voidp unzFile;
 #define UNZ_INTERNALERROR               (-104)
 #define UNZ_CRCERROR                    (-105)
 
+#ifndef OF
+#define OF(args) args
+#endif
+
 /* tm_unz contain date/time info */
 typedef struct tm_unz_s 
 {
